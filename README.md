@@ -1,15 +1,10 @@
-# Project
+# Automating Custom Speech Model Development and Deployment
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> This repo includes sample code that can be leveraged to automate the development and deployment of custom speech models. 
+> The samples mentioned here leverages [Speech CLI with PowerShell](https://learn.microsoft.com/azure/cognitive-services/Speech-Service/spx-basics?tabs=windowsinstall%2Cpowershell#create-a-resource-configuration).
 
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
-
+## Get Started
+Follow the details in the [**automate**](./automate.md) to get started
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
