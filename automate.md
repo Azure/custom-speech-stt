@@ -134,7 +134,7 @@ Write-Host $bmJson
 
 ## Evaluate the model
 
-After your custom model is built, use the evaluation/testing dataset that you created earlier to run an evaluation. For the evaluation, the built custom model is generally compared with the base model that was used to build it. You can also compare two custom models. Use the `spx csr evaluation create` command to create an evaluation. In the following script, the evaluation compares the custom model that was just created with the base model from which it was built. For the custom model, the URL is fetched from the *my.model.txt* file. The base model URL is fetched from the JSON result produced by the preceding PowerShell script.
+After your custom model is built, use the evaluation/testing dataset that you created earlier to run an evaluation. For the evaluation, the built custom model is generally compared with the base model that was used to build it. You can also compare two custom models. Use the `spx csr evaluation create` command to create an evaluation. In the following script, the evaluation compares the custom model that was just created with the base model from which it was built. For the custom model, the URL is fetched from the *my.model.txt* file and is passed as **model1** parameter. The base model URL is fetched from the JSON result produced by the preceding PowerShell script and is passed as **model2** parameter. In the script below, do update the model2 parameter with the base model's GUID.
 
 ```
 spx --% csr evaluation create --project "@my.project.txt" --name evaluation1 --model1 "@my.model.txt" --model2 "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/base/modelGuidHere" --dataset "@my.dataset.test1.txt" --output url "@my.eval1.txt"
